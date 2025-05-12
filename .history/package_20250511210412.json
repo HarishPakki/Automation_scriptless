@@ -2,8 +2,6 @@
   "name": "automation-execution-app",
   "version": "0.1.0",
   "private": true,
-  "main": "public/electron.js",
-  "homepage": "./",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -23,8 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "electron": "electron ."
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
