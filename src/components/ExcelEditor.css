@@ -1,55 +1,86 @@
 .excel-container {
-    width: 95%;
-    margin: 30px auto;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .table-container {
-    overflow-x: auto;
-  }
-  
-  .excel-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-  }
-  
-  .excel-table th,
-  .excel-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-  }
-  
-  .excel-table th {
-    background-color: #f0f0f0;
-  }
-  
-  .excel-table input {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 6px;
-    background-color: #fff;
-  }
-  
-  .button-group {
-    margin-top: 20px;
-  }
-  
-  .button-group button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    background-color: #0074cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button-group button:hover {
-    background-color: #005fa3;
-  }
-      
+  width: 95%;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.excel-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.excel-table th,
+.excel-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.excel-table th {
+  background-color: #f0f0f0;
+}
+
+.excel-table input {
+  width: 95%;
+  border: none;
+  outline: none;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #005fa3;
+}
+
+
+.sheet-tabs {
+  margin-bottom: 1rem;
+}
+
+.sheet-tab {
+  margin-right: 0.1rem;
+  padding: 6px 12px;
+  background-color: gray;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.sheet-tab.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.excel-editor-container {
+  display: flex;
+  gap: 10px;
+}
+
+.object-repository-table {
+  width: 40%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px auto;
+}
