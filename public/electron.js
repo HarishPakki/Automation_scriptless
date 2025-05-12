@@ -21,17 +21,6 @@ function createWindow() {
   );
 }
 
-// ipcMain.handle('select-file', async () => {
-//   const result = await dialog.showOpenDialog({
-//     properties: ['openFile']
-//   });
-
-//   if (result.canceled || result.filePaths.length === 0) {
-//     return null;
-//   }
-
-//   return result.filePaths[0]; // Full path of selected file
-// });
 ipcMain.handle('dialog:openFile', async () => {
   const { canceled, filePaths } = await dialog.showOpenDialog({
     properties: ['openFile']
