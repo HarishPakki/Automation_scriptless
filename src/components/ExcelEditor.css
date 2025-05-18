@@ -1,10 +1,9 @@
 .excel-container {
-  width: 95%;
-  margin: 30px auto;
   background: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: auto;
 }
 
 .table-container {
@@ -28,7 +27,6 @@
 }
 
 .excel-table input {
-  width: 95%;
   border: none;
   outline: none;
   padding: 6px;
@@ -82,5 +80,29 @@
   background: white;
   padding: 20px;
   border-radius: 8px;
-  margin: 30px auto;
+}
+
+.tree-view {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.arrows-actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.arrow-right {
+  margin-bottom: -10px;
+}
+
+.search-input {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 5px;
 }

@@ -28,6 +28,11 @@ const ObjectRepositoryTable = () => {
     setRows(updatedRows);
   };
 
+  const handleDragStart = (e, value) => {
+    console.log("handleDragStart",value);
+    e.dataTransfer.setData("text/plain", value);
+  };
+
   return (
     <div className='object-repository-table' style={{ padding: '1rem' }}>
       <button onClick={handleAddRow}>+ key value</button>
@@ -47,6 +52,8 @@ const ObjectRepositoryTable = () => {
                   value={row.key}
                   onChange={e => handleChange(idx, 'key', e.target.value)}
                   onBlur={handleBlur}
+                  draggable
+                  onDragStart={(e) => handleDragStart(e, e.target.value)}
                 />
               </td>
               <td>
@@ -55,6 +62,8 @@ const ObjectRepositoryTable = () => {
                   value={row.value}
                   onChange={e => handleChange(idx, 'value', e.target.value)}
                   onBlur={handleBlur}
+                  draggable
+                  onDragStart={(e) => handleDragStart(e, e.target.value)}
                 />
               </td>
             </tr>
